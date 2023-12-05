@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+</head>
+<body>
+    <header>
+        <style>
+        #myVideo {
+            position: fixed;
+            min-height: 100%;
+            min-width: 100%;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        section {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            z-index: 99;
+        }
+
+        .ytlink {
+            font-size: 30px;
+
+            text-decoration: none;
+            margin: 50px;
+            color: rgb(15, 226, 32);
+            font-weight: bold;
+        }
+        .ytlink:hover {
+            color: rgb(255, 0, 0);
+            transform:scale(5);
+            transition: all 0.3s ease-in-out
+        }
+        .linkContainer {
+            background-color: rgba(0, 0, 0, 0.842);
+            height: 300px;
+            width: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .links {
+            position: relative;
+            display: flex;
+        }
+        @media (min-width:100px) and (max-width: 1000px){
+            .ytlink {
+            font-size: 12px;
+            padding: 5px !important;
+            margin: 10px !important;
+        }
+        .linkContainer {
+            background-color: rgba(0, 0, 0, 0.89);
+            height: 100px;
+        }
+
+      }
+
+
+    </style>
+    </header>
+    <video  autoplay loop muted id="myVideo">
+        <source src="The Matrix Raining Green Code Backdrop for OBS - Teams, Zoom calls in 4k.mp4" type="video/mp4">
+    </video>
+ <section>
+    <div class="linkContainer">
+        <div class="links">
+            <a class="ytlink" href="https://www.Youtube.com">Y</a>
+            <a class="ytlink" href="https://www.Youtube.com">O</a>
+            <a class="ytlink" href="https://www.Youtube.com">U</a>
+            <a class="ytlink" href="https://www.Youtube.com">T</a>
+            <a class="ytlink" href="https://www.Youtube.com">U</a>
+            <a class="ytlink" href="https://www.Youtube.com">B</a>
+            <a class="ytlink" href="https://www.Youtube.com">E</a>
+        </div>
+    </div>
+
+ </section>
+   <footer>
+      <p>
+        CyberTech Solutions Ltd. (2023)
+     </p>
+   </footer>
+
+</body>
+</html>
