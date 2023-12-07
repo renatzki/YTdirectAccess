@@ -16,31 +16,36 @@
           bottom: 0;
           z-index: -1;
         }
+
         section {
           padding: 0;
           margin: 0;
           display: flex;
-          height: 100vh;
+          height: 50vh;
           justify-content: center;
           align-items: center;
           z-index: 99;
         }
+        .links {
+            position: absolute;
+            top: 70px;
+
+        }
 
         .ytlink {
-          font-size: 40px;
-          display: flex;
+          font-size: 50px;
           text-decoration: none;
-          margin: 40px; /* --- std margin is 50px --- */
-          color: white;
+          margin: 50px;
+          color: rgb(15, 226, 32);
           font-weight: bold;
-        }
 
+                    
+        }
         .ytlink:hover {
-          color: red;
-          transform: scale(5); /* --- std scale is 5 --- */
+          color: rgb(255, 0, 0);
+          transform: scale(5);
           transition: all 0.3s ease-in-out;
         }
-
         .linkContainer {
           background-color: rgba(0, 0, 0, 0.842);
           height: 300px;
@@ -48,40 +53,33 @@
           display: flex;
           justify-content: center;
           align-items: center;
-        }
-
-        .links {
           position: absolute;
-          display: flex;
-          bottom: 47vh;
-          
-
+          bottom: 40vh;
         }
-
         .tag-name {
-          
+          color: rgb(247, 0, 0);
           position: absolute;
-          bottom: 40vh; /* --- std botton is 47vh--- */
+          bottom: 47vh;
           width: 100%;
           text-align: center;
           font-family: "OCR A";
           font-size: 25px;
-          color: red;
-            animation: neon 0.5s ease-in-out infinite alternate ;
+          animation: neon 0.5s ease-in-out infinite alternate ;
         }
-
-        @media (min-width: 100px) {
+        @media (min-width: 100px) and (max-width: 900px) {
           .ytlink {
-            font-size: 35px;
-            padding: 2px !important;
-            margin: 8px !important; /* --- std margin is 10px --- */
+            font-size: 20px;
+            padding: 3px !important;
+            margin: 10px !important; 
+          }
+          .tag-name {
+            font-size: 20px;
           }
           .linkContainer {
             background-color: rgba(0, 0, 0, 0.89);
             height: 200px;
-            width: 100vw;
+            width: 100%;
           }
-
           @keyframes neon {
             from {
               text-shadow: 0 0 10px #fff, 0 0 20px #fc0000;
@@ -91,9 +89,6 @@
                 0 0 40px #ff0000, 0 0 70px #ff0000;
             }
           }
-          .redBG {
-                text-shadow: 0 0 10px #fff, 0 0 20px #ff0000 !important;
-}
         }
       </style>
     </header>
@@ -117,7 +112,7 @@
       </div>
     </section>
     <div class="tag-name">
-      <h5>Author:Renatzki Agab</h5>
+      <h5>Author: <span class="name">Renatzki Agab</span></h5>
     </div>
   </body>
 </html>
