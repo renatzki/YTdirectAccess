@@ -67,24 +67,24 @@
           font-family: "OCR A";
           font-size: 25px;
           color: red;
-            animation: neon 0.1s ease-in-out infinite alternate ;
+            animation: neon 0.5s ease-in-out infinite alternate ;
         }
 
         @media (min-width: 100px) {
           .ytlink {
             font-size: 35px;
-            padding: 5px !important;
+            padding: 2px !important;
             margin: 8px !important; /* --- std margin is 10px --- */
           }
           .linkContainer {
             background-color: rgba(0, 0, 0, 0.89);
             height: 200px;
+            width: 100vw;
           }
 
           @keyframes neon {
             from {
-              text-shadow: 0 0 10px #fff, 0 0 20px #fc0000,0 0 30px #ff0000,
-                0 0 40px #ff0000, 0 0 70px #ff0000 ;
+              text-shadow: 0 0 10px #fff, 0 0 20px #fc0000;
             }
             to {
               text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0000,
